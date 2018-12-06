@@ -9,6 +9,9 @@
     </div>
   <% end %>
 
+  <%= f.label :status, '状態' %>
+  <%= f.select :status, [["未着手", "未着手"], ["作業中", "作業中"], ["完了", "完了"]] %>
+
   <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
   
